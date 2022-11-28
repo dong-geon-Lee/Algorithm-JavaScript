@@ -18,14 +18,21 @@ function solution(arr) {
 
   // 배열의 길이
   let n = arr.length;
+
+  // 상하좌우를 탐색하기 위한 변수 dx,dy 선언
   let dx = [-1, 0, 1, 0];
   let dy = [0, 1, 0, -1];
+
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
+      // 봉우리 조건을 만족하면 1
       let flag = 1;
+
       for (let k = 0; k < 4; k++) {
+        // 방향 탐색 행 좌표
         let nx = i + dx[k];
         let ny = j + dy[k];
+
         if (
           nx >= 0 &&
           nx < n &&
