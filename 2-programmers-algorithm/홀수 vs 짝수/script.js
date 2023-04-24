@@ -7,3 +7,4 @@ function solution(num_list) {
 }
 
 console.log(solution([-1, 2, 5, 6, 3]));
+// *good
