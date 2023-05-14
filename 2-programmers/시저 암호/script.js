@@ -5,7 +5,6 @@ function solution(s, n) {
     let charCode = s.charCodeAt(i);
     let shiftedCode;
 
-    console.log(charCode);
     if (charCode >= 65 && charCode <= 90) {
       shiftedCode = ((charCode - 65 + n) % 26) + 65;
     } else if (charCode >= 97 && charCode <= 122) {
