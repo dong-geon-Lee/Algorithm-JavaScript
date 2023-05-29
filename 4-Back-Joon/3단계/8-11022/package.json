@@ -1,0 +1,12 @@
+{
+  "name": "6-1001",
+  "version": "1.0.0",
+  "description": "",
+  "main": "correct.js",
+  "scripts": {
+    "start": "nodemon -q correct.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
