@@ -51,3 +51,5 @@ let str = "KKHSSSSSSSE";
 console.log(solutionMe(str));
 console.log(solutionGPT(str));
 console.log(solutionCourse(str));
+
+console.log("git work flow 연습");
