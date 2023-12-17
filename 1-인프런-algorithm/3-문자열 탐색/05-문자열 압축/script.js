@@ -56,3 +56,5 @@ console.log("git work flow 연습");
 console.log("두번쨰 git workd 연습");
 
 console.log("test브랜치에서 dev 브랜치 업데이트 하기");
+
+console.log("test 브랜치에서 작업 1");
