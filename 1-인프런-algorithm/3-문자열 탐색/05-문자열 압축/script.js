@@ -53,3 +53,4 @@ console.log(solutionGPT(str));
 console.log(solutionCourse(str));
 
 console.log("git work flow 연습");
+console.log("두번쨰 git workd 연습");
