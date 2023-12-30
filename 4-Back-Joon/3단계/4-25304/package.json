@@ -1,0 +1,16 @@
+{
+  "name": "4-25304",
+  "version": "1.0.0",
+  "description": "",
+  "main": "correct.js",
+  "scripts": {
+    "start": "nodemon correct.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "nodemon": "^3.0.2"
+  }
+}
