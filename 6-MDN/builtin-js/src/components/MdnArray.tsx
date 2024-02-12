@@ -62,6 +62,10 @@ const MdnArray = () => {
 
   console.log(array4);
 
+  const arr1: any = [1, 2, 3, 4, 5];
+  const newArr1: any = arr1.with(4, 6).map((x: any) => x ** 2);
+  console.log(newArr1);
+
   return <div>MdnArray</div>;
 };
 
