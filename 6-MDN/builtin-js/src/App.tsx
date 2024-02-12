@@ -1,3 +1,5 @@
+import MdnArray from "./components/MdnArray";
+
 const App = () => {
   //* 1-1
   // const fruits = [];
@@ -59,19 +61,19 @@ const App = () => {
   // });
 
   //* 1-5
-  const fruits = ["Apple", "Banana", "Strawberry"];
-  const moreFruits = ["Mango", "Cherry"];
-  const combinedFruits = fruits.concat(moreFruits);
-  console.log(combinedFruits);
+  // const fruits = ["Apple", "Banana", "Strawberry"];
+  // const moreFruits = ["Mango", "Cherry"];
+  // const combinedFruits = fruits.concat(moreFruits);
+  // console.log(combinedFruits);
 
-  const fruitsCopy2 = Array.from(fruits);
-  console.log(fruitsCopy2);
+  // const fruitsCopy2 = Array.from(fruits);
+  // console.log(fruitsCopy2);
 
-  const fruitsDeepCopy = JSON.parse(JSON.stringify(fruits));
+  // const fruitsDeepCopy = JSON.parse(JSON.stringify(fruits));
 
   return (
     <div className="App">
-      <h1>js 실습</h1>
+      <MdnArray />
     </div>
   );
 };
