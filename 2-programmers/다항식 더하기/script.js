@@ -1,20 +1,25 @@
 function solution(polynomial) {
-  const arr = polynomial.split(" + ");
+  let xSum = 0;
+  let constantSum = 0;
 
-  const xNum = arr
-    .filter((n) => n.includes("x"))
-    .map((n) => n.replace("x", "") || "1")
-    .reduce((acc, cur) => acc + parseInt(cur, 10), 0);
+  polynomial.split(" + ").forEach((term) => {
+    if (term.includes("x")) {
+      const coefficient = term.replace("x", "") || "1";
+      xSum += parseInt(coefficient);
+    } else {
+      constantSum += parseInt(term);
+    }
+  });
 
-  const num = arr
-    .filter((n) => !isNaN(n))
-    .reduce((acc, cur) => acc + parseInt(cur, 10), 0);
+  let result = "";
+  if (xSum !== 0) {
+    result += `${xSum === 1 ? "" : xSum}x`;
+  }
+  if (constantSum !== 0) {
+    result += (result ? " + " : "") + constantSum;
+  }
 
-  let answer = [];
-  if (xNum) answer.push(`${xNum === 1 ? "" : xNum}x`);
-  if (num) answer.push(num);
-  return answer.join(" + ");
+  return result;
 }
 
-// debugger;
-console.log(solution("3x + 7 + x")); //* return 3 이 나옴
+solution("3x + 7 + x");
